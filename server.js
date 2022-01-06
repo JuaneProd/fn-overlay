@@ -15,14 +15,10 @@ let observers = {
     url: "",
     key: "12341234",
   },
-  dabuca: {
-    url: "",
-    key: "1234",
-  },
   juane: {
     url: "",
-    key: "123456",
-  },
+    key: "1234",
+  }
 };
 
 app.get("/banderita/:observer", (req, res) => {
