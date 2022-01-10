@@ -6,7 +6,7 @@ import pytesseract
 
 import requests
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\buena\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Juane\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
 
 # observer_name = str(input('Introduce your observer name: ')).lower()
