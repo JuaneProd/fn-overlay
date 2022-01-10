@@ -27,7 +27,7 @@
       setInterval(() => {
         axios({
           method: "get",
-          url: "https://fn-overlay.pages.dev/urlBanderita/<%- observer %>",
+          url: "http://localhost:3000/urlBanderita/<%- observer %>",
         }).then((response) => {
           document.getElementById("flag").src = response.data;
         });

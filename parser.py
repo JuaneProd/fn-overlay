@@ -50,7 +50,7 @@ while True:
   if text != player_observed:
       player_observed = text
       print('Observing a new player: ', player_observed)
-      requests.post('https://fn-overlay.pages.dev/urlBanderita/juane', json={'player': player_observed, "key": "1234"})
+      requests.post('http://localhost:3000/urlBanderita/Juane', json={'player': player_observed, "key": "1234"})
 
 
   #Your health is now represented by the 'text' variable. Do whatever you want with it!

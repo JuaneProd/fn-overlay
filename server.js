@@ -15,7 +15,7 @@ let observers = {
     url: "",
     key: "12341234",
   },
-  juane: {
+  Juane: {
     url: "",
     key: "1234",
   }
