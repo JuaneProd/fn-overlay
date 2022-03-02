@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title></title>
+  </head>
+  <body style="background-color: #232323">
+    <div style="background-color: #2360bc; width: 47px; height: 47px">
+      <img
+        id="flag"
+        style="border-radius: 50%; background-color: #2360bc; margin: 5px; border: 1px solid #fff;" width="35px" height="35px" src='<%- urlWidget %>'/>
+    </div>
+    <script>
+      setInterval(() => {
+        axios({
+          method: "get",
+          url: "http://localhost:3000/urlWidget/<%- observer %>",
+        }).then((response) => {
+          document.getElementById("flag").src = response.data;
+        });
+      }, 0.1 * 1000);
+    </script>
+  </body>
+</html>

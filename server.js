@@ -21,9 +21,9 @@ let observers = {
   }
 };
 
-app.get("/banderita/:observer", (req, res) => {
-  res.render("banderita", {
-    urlBanderita: observers[req.params.observer],
+app.get("/widget/:observer", (req, res) => {
+  res.render("widget", {
+    urlWidget: observers[req.params.observer],
     observer: req.params.observer,
   });
 });
@@ -32,11 +32,11 @@ app.post("/", (req, res) => {
   console.log("/: ", req.body);
 });
 
-app.get("/urlBanderita/:observer", (req, res) => {
+app.get("/urlWidget/:observer", (req, res) => {
   res.send(observers[req.params.observer].url);
 });
 
-app.post("/urlBanderita/:observer", async (req, res) => {
+app.post("/urlWidget/:observer", async (req, res) => {
   if (req.body.key === observers[req.params.observer].key) {
     observers[req.params.observer].url = req.body.url;
 
@@ -79,4 +79,4 @@ app.post("/urlBanderita/:observer", async (req, res) => {
 const PORT = 3000;
 const HOST = "localhost";
 
-app.listen(PORT, HOST, () => console.log(`Serving on port ${PORT}`));
+app.listen(PORT, HOST, () => console.log(`Serving on port ${PORT} | http://localhost:${PORT}`));
