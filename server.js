@@ -76,7 +76,7 @@ app.post("/urlWidget/:observer", async (req, res) => {
   }
 });
 
-const PORT = 80;
+const PORT = 8080;
 const HOST = "localhost";
 
 app.listen(PORT, HOST, () => console.log(`Serving on port ${PORT} | http://localhost:${PORT}`));
