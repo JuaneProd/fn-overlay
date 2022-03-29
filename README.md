@@ -1,1 +1,1 @@
-# Fast git repository for Kauba-Banderita
+# Custom Fortnite Spectator Mode Widget
