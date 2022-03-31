@@ -79,4 +79,4 @@ app.post("/urlWidget/:observer", async (req, res) => {
 const PORT = 8080;
 const HOST = "localhost";
 
-app.listen(PORT, HOST, () => console.log(`Serving on port ${PORT} | http://localhost:${PORT}`));
+app.listen(process.env.PORT || 8080);
