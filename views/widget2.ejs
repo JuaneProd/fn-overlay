@@ -9,18 +9,13 @@
 
 <body>
     <div style="background-color: #2360bc; width: 47px; height: 47px">
-        <img id="flag" style="
-          border-radius: 50%;
-          background-color: #2360bc;
-          margin: 5px;
-          border: 1px solid #fff;
-        " width="35px" height="35px" src="<%-" urlBanderita % /> />
+        <img id="flag" style="border-radius: 50%; background-color: #2360bc; margin: 5px; border: 1px solid #fff;" width="35px" height="35px" src='<%- urlWidget %>' />
     </div>
     <script>
         setInterval(() => {
             axios({
                 method: "get",
-                url: "http://overlay.juaneprod.com:8080/urlBanderita/<%- observer %>",
+                url: "http://overlay.juaneprod.com:8080/urlWidget/<%- observer %>",
             }).then((response) => {
                 document.getElementById("flag").src = response.data;
             });
